@@ -1,5 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import './styles.css'
 
 class App extends React.Component {
 
@@ -30,9 +31,9 @@ class App extends React.Component {
 	render() {
 		let text = this.state.reset ? 'resetting the clock.' : 'mounting this React component.'
 		return (
-			<div>
-				<p>So far {(this.state.timeElapsed/1000).toFixed(1)} seconds have passed since {text}</p>
-				<button onClick={this.resetTimer}>Reset</button>
+			<div className="counter">
+				<p className="text">So far <span className="elapsedtime">{(this.state.timeElapsed/1000).toFixed(1)}</span> seconds have passed since {text}</p>
+				<button className="resetbutton" onClick={this.resetTimer}>Reset</button>
 			</div>
 		)
 	}
