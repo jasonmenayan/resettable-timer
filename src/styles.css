@@ -1,0 +1,25 @@
+body {
+	text-align: center;
+	font:24px normal Helvetica, sans-serif;
+	background: #f2ede3;
+}
+
+.counter {
+	padding-top: 200px;
+	padding-bottom: 200px;
+}
+
+.elapsedtime {
+	font-weight: bolder;
+	color: red;
+}
+
+.resetbutton {
+  background-color: #3e86f9;
+  border: none;
+  text-decoration: none;
+  color: white;
+  padding: 12px 28px;
+  display: inline-block;
+  font-size:24px;
+}
